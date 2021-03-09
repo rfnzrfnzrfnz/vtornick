@@ -1,0 +1,9 @@
+def toch_step(a):
+    if a ==1:
+        print("YES")
+    elif a % 2!=0:
+        print("NO")
+    else:
+        return toch_step(a//2)
+a = int(input())
+toch_step(a)
